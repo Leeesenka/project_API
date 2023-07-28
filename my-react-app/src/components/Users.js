@@ -21,7 +21,7 @@ const Users = ({ users, onSelectUser, onDeleteUser }) => {
             >
               <img src={user.image} className="card-img-top" alt="User"></img>
               <div className="card-body">
-                <p className="card-title">ID: {user.id}</p>
+                <p className="card-title">Age: {user.age}</p>
                 <p className="card-title">First Name: {user.firstName}</p>
                 <p className="card-title">Last Name: {user.lastName}</p>
                 <button 
