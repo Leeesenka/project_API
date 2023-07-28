@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Users from './components/Users';
 import Details from './components/Details';
-import UserForm from './components/UserForm'; 
+
 import NavigationBar from './components/NavigationBar'
-import Search from './components/Search';
+
 import './App.css';
 
 function App() {

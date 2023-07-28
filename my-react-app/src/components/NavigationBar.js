@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar, Container, Nav, Form, Button } from 'react-bootstrap';
+import { Navbar, Container, Nav, Form } from 'react-bootstrap';
 import UserForm from './UserForm';
 import Search from './Search';
 
@@ -8,13 +8,13 @@ const NavigationBar = ({ onNewUser, onSearch, users }) => {
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
-    onSearch(searchTerm); // Call the onSearch function with searchTerm
+    onSearch(searchTerm); 
   };
 
-  const handleSearchSubmit = (event) => {
-    event.preventDefault();
-    // No action taken on form submission, you may want to add some action.
-  };
+  // const handleSearchSubmit = (event) => {
+  //   event.preventDefault();
+  
+  // };
 
   const filteredUsers = users ? users.filter(user => 
     user.firstName.toLowerCase().includes(searchTerm.toLowerCase())
